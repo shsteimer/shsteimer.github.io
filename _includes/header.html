@@ -10,7 +10,12 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    <ul class="nav navbar-nav">
-	      	<li><a href="/about">About</a></li>
+	    	 {% for page in site.pages %}
+                {% if page.nav %}
+                	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endif %}
+        	{% endfor %}
+	      	
 	    </ul>
   	</div>
 </nav>
