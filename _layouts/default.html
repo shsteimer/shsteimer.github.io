@@ -19,9 +19,29 @@
             ga('send', 'pageview');
         </script>
         {% include header.html %}
-        <section class="content">
-            {{ content }}
-        </section>
+        <div class="row">
+            <section class="content col-sm-offset-1 col-sm-8 col-xs-offset-1 col-xs-11">
+                {{ content }}
+            </section>
+            <aside class="col-sm-3 hidden-xs">
+                <h4>Categories</h4>
+                <section class="well categories">
+                    <ul>
+                        {% for category in site.categories %}
+                            <li><a href="/{{ category | first | slugize }}/">{{ category | first }} ({{ category | last | size}})</a></li>
+                        {% endfor %}   
+                    </ul> 
+                </section>
+                <h4>Tags</h4>
+                <section class="well tags">
+                    <ul>
+                        {% for tag in site.tags %}
+                            <li><a href="/{{ tag | first | slugize }}/">{{ tag | first }} ({{ tag | last | size}})</a></li>
+                        {% endfor %}   
+                    </ul>    
+                </section>        
+            </aside>
+        </div>
         {% include footer.html %}
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
