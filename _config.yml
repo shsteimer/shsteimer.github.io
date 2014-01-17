@@ -1,4 +1,3 @@
 url: http://www.shsteimer.com
 permalink: pretty
-pygments: true
-exclude: ['bootstrap.sh', 'CNAME', 'LICENSE','Readme.md','Vagrantfile']
+exclude: ['bootstrap.sh', 'CNAME', 'LICENSE', 'Readme.md', 'Vagrantfile']

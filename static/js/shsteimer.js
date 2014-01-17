@@ -1,0 +1,3 @@
+shsteimer = {};
+
+shsteimer.$ = jQuery.noConflict();

@@ -1,0 +1,17 @@
+body { 
+	padding-top: 70px; 
+}
+.page-header {
+	margin: 0;
+}
+.page-header h1 {
+	padding-left: 30px;
+}
+.page-header span {
+	padding-left: 30px;
+}
+.content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 60px;
+}
