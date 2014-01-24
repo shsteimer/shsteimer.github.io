@@ -3,3 +3,4 @@ permalink: /:year/:month/:day/:title/
 exclude: ['bootstrap.sh', 'CNAME', 'LICENSE', 'README.md', 'Vagrantfile']
 description: a Weblog about stuff.
 name: Sean Steimer | shsteimer.com
+excerpt_separator: <!--more-->

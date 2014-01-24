@@ -1,0 +1,60 @@
+---
+layout: nosidebar
+title: Post Archives
+sitemap: true
+nav: true
+post-date: 2014-01-18 13:00:00
+---
+
+<h1>Archives</h1>
+<section id="categories">
+	<h2>Categories</h2>
+	<div class="panel-group" id="cats-accordion">
+	{% for category in site.categories %}
+  		<div class="panel panel-default" id="category-{{ category | first | slugize }}">
+    		<div class="panel-heading">
+  				<a data-toggle="collapse" data-parent="#accordion" href="#collapse-cat-{{ category | first | slugize }}">
+  					<h4 class="panel-title">{{ category | first }} ({{ category | last | size}})</h4>
+  				</a>
+    		</div>
+    		<div id="collapse-cat-{{ category | first | slugize }}" class="panel-collapse collapse">
+      			<div class="panel-body">
+	      			<ul>
+	        		{% for post in category[1] %} 
+	    				<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+	  				{% endfor %}
+	  				</ul>
+      			</div>
+    		</div>
+  		</div>
+  	{% endfor %}
+  	</div>	
+</section>
+<section id="tags">
+	<h2>Tags</h2>
+	<div class="panel-group" id="tags-accordion">
+	{% for tag in site.tags %}
+  		<div class="panel panel-default" id="tag-{{ tag | first | slugize }}">
+    		<div class="panel-heading">
+  				<a data-toggle="collapse" data-parent="#accordion" href="#collapse-tag-{{ tag | first | slugize }}">
+  					<h4 class="panel-title">{{ tag | first }} ({{ tag | last | size}})</h4>
+  				</a>
+    		</div>
+    		<div id="collapse-tag-{{ tag | first | slugize }}" class="panel-collapse collapse">
+      			<div class="panel-body">
+       				<ul>
+	        		{% for post in tag[1] %} 
+	    				<li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+	  				{% endfor %}
+	  				</ul>
+      			</div>
+    		</div>
+  		</div>
+  	{% endfor %}
+  	</div>	
+</section>
+<script type="text/javascript">
+	window._q.push(function() {
+		shsteimer.archives.init();
+	});
+</script>

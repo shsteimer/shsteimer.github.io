@@ -18,3 +18,9 @@ footer {
 	height: 20px;
 	vertical-align: top;
 }
+aside {
+	padding-right: 40px;
+}
+.content {
+	margin-bottom: 25px;
+}
