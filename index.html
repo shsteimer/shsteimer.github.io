@@ -8,7 +8,7 @@ title: Home
 {% for post in site.posts %}
 	<article class="post">
 	    <a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.title }}</h2></a>
-	    <span class="post-info muted">Posted by {{ post.author }} on {{ post.date | date_to_string }}</span>
+	    <span class="post-info text-muted">Posted by {{ post.author }} on {{ post.date | date_to_string }}</span>
 	    <div class="post-body">{{ post.excerpt }}</div>
 	</article>
 {% endfor %}

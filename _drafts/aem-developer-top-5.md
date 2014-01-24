@@ -5,7 +5,7 @@ author: Sean
 categories: AEM
 tags: sling jcr rest http cq-design development selectors
 ---
-As a senior AEM architect, I spend a not insignificant amount of time interviewing potential candidates for CQ<sup>\[[1](#note-1)\]</sup> developer positions.  As a result of that, I often find myself thinking about the things I want to all CQ developers to know.  In some sense this is a wish list, a list of things I'm looking for but don't often see.  It is by no means a comprehensive list of everything you should know, and it skips some rather large topics, but these are things that in my mind seperate the wheat from the chaff.  Some of these really apply to anyone doing general web programming, not just AEM, and some are very CQ specific.  
+As a senior AEM architect, I spend a not insignificant amount of time interviewing potential candidates for CQ developer positions.  As a result of that, I often find myself thinking about the things I want to all CQ developers to know.  In some sense this is a wish list, a list of things I'm looking for but don't often see.  It is by no means a comprehensive list of everything you should know, and it skips some rather large topics, but these are things that in my mind seperate the wheat from the chaff.  Some of these really apply to anyone doing general web programming, not just AEM, and some are very CQ specific.  
 
 I should note that these are in no particular order, other than the order that they come to my head.  Number 1 isn't necessarily more important than number 5, or vice-versa.
 <!--more-->
@@ -33,11 +33,6 @@ It's obviously not a be-all, end-all solution.  But it is one more tool in your 
 
 5\. Just Enough Front-End Know-How to be Dangerous
 -----------------------------------------
-It's no longer good enough to be just a backend java programmer when it comes to AEM development.  Java is obviously at the core of what we create, but that's just table stakes as far as I'm concerned.  The Front-End development team is going to handle most of the front-end work, especially the html & css, so I'm not really looking for a "Full-Stack Developer"<sup>\[[2](#note-2)\]</sup>.
+It's no longer good enough to be just a backend java programmer when it comes to AEM development.  Java is obviously at the core of what we create, but that's just table stakes as far as I'm concerned.  The Front-End development team is going to handle most of the front-end work, especially the html & css, so I'm not really looking for a Full-Stack Developer.
 
-You must have an understanding of javascript and jQuery and be able to create components that utilize ajax.  You need to have an understanding of html & css, know how to use firebug or chrome dev tools, etc.  
-
-<ol class="notes">
-	<li id="note-1">I use the terms AEM &amp; CQ interchangeably.  I've finally stopped calling it Day CQ, 3 years the Adobe acquisition, so maybe in 2 more years I'll get used to saying AEM and not CQ.  One of these days I'm gonna write a jquery plugin that finds instances of "CQ" in my writing, strikes it thorugh, and replaces it with AEM.  Until then, just silently translate between the two in your head.</li>
-	<li id="note-2">I hate that term, for reasons that are too long and varied to get into here, but it seems to be getting more traction, so I use it here, begrudgingly.</li>
-</ol> 
+You must have an understanding of javascript and jQuery and be able to create components that utilize ajax.  You need to have an understanding of html & css, know how to use firebug or chrome dev tools, etc.
