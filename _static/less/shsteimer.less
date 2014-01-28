@@ -1,5 +1,24 @@
 @import "bootstrap-custom.less";
 
+.content-wrapper {
+	.make-row();
+}
+
+.content {
+    .make-sm-column-offset(1);
+    .make-sm-column(8);
+    .make-xs-column(11);
+    margin-left: 8.333333333333332%;
+    margin-bottom: 25px;
+}
+.content-wide {
+	.make-sm-column-offset(1);
+    .make-sm-column(10);
+    .make-xs-column(11);
+    margin-left: 8.333333333333332%;
+	margin-bottom: 25px;	
+}
+
 body { 
 	padding-top: 70px; 
 }
@@ -24,9 +43,7 @@ footer {
 }
 
 aside {
+	.make-sm-column(3);
+	.hidden-xs;
 	padding-right: 40px;
-}
-
-.content {
-	margin-bottom: 25px;
 }
