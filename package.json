@@ -1,0 +1,10 @@
+{
+  "name": "www.shsteimer.com",
+  "version": "0.0.1",
+  "description": "my gh pages site",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-recess": "~0.5.0",
+    "grunt-contrib-uglify": "~0.3.2"
+  }
+}

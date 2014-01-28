@@ -5,8 +5,12 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         
         <meta name="author" content="Sean Steimer" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        {% if site.devmode %}
         <link rel="stylesheet" href="/static/css/shsteimer.css" type="text/css" media="all" />
+        {% else %}
+        <link rel="stylesheet" href="/static/css/shsteimer.min.css" type="text/css" media="all" />
+        {% endif %}
+        
         <script type="text/javascript">window._q=[];</script>
 
         <title>{{ page.title }} | Sean Steimer | shsteimer.com</title>
@@ -24,7 +28,11 @@
         {% include footer.html %}
         <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        {% if site.devmode %}
         <script type="text/javascript" src="/static/js/shsteimer.js"></script>
+        {% else %}
+        <script type="text/javascript" src="/static/js/shsteimer.min.js"></script>
+        {% endif %}
         <script type="text/javascript">shsteimer.init();</script>
         <script>
             //twitter follow button

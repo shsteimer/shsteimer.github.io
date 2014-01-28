@@ -3,7 +3,7 @@
     <section class="well categories">
         <ul>
             {% for category in site.categories %}
-                <li><a href="/archives/#category-{{ category | first | slugize }}">{{ category | first }} ({{ category | last | size}})</a></li>
+                <li><a href="/archives/#cat-{{ category | first | slugize }}">{{ category | first }} ({{ category | last | size}})</a></li>
             {% endfor %}   
         </ul> 
     </section>
