@@ -1,6 +1,6 @@
 url: http://www.shsteimer.com
 permalink: /:year/:month/:day/:title/
-exclude: ['package.json', 'Gruntfile.js', 'node_modules', 'CNAME', 'LICENSE', 'README.md', 'Vagrantfile', 'bootstrap.sh']
+exclude: ['package.json', 'Gruntfile.js', 'node_modules', 'CNAME', 'LICENSE', 'README.md', 'Vagrantfile', 'bootstrap.sh', '404.html']
 description: a Weblog about stuff.
 name: Sean Steimer | shsteimer.com
 excerpt_separator: <!--more-->
