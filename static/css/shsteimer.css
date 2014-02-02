@@ -5967,7 +5967,7 @@ footer blockquote {
 footer .contact {
   position: relative;
   float: left;
-  width: 25%;
+  width: 50%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -5980,14 +5980,14 @@ footer .contact .rss > img {
 footer .copy {
   position: relative;
   float: left;
-  width: 25%;
+  width: 33.33333333333333%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 480px) {
   footer .copy {
-    margin-left: 50%;
+    margin-left: 16.666666666666664%;
   }
 }
 .post {
