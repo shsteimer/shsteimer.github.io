@@ -1,49 +1,79 @@
 @import "bootstrap-custom.less";
 
-.content-wrapper {
-	.make-row();
-}
-
-.content {
-    .make-sm-column-offset(1);
-    .make-sm-column(8);
-    .make-xs-column(11);
-    margin-left: 8.333333333333332%;
-    margin-bottom: 25px;
-}
-.content-wide {
-	.make-sm-column-offset(1);
-    .make-sm-column(10);
-    .make-xs-column(11);
-    margin-left: 8.333333333333332%;
-	margin-bottom: 25px;	
-}
-
 body { 
-	padding-top: 70px; 
+	padding-top: 40px; 
 }
 .page-header {
 	margin: 0;
 	h1 {
-		padding-left: 30px;
+		padding-left: 15px;
 	}
 	span {
-		padding-left: 30px;
+		//hacky, avisaully align the text int he soan with the h1.
+		padding-left: 19px;
 	}
 }
-
+.wrapper {
+	.make-row();
+}
+.main {
+	.container-fluid();
+	.content {
+		.make-md-column(8);
+		.make-sm-column(8);
+		.make-xs-column(11);
+		.make-xs-column-offset(1);
+	}
+	aside {
+		.make-md-column(3);
+		.make-sm-column(3);
+		.hidden-xs();
+	}
+	.wide {
+		.content {
+			.make-md-column(10);
+			.make-sm-column(10);
+			.make-xs-column(10);
+		}
+	}
+}
 footer {
 	clear: both;
+	.container-fluid();
+	.well();
+	padding: @navbar-padding-vertical @navbar-padding-horizontal;
+	.contact {
+		.make-xs-column(3);
+		.rss > img {
+			width: 20px;
+			height: 20px;
+			vertical-align: top;
+		}
+	}
+	.copy {
+		.make-xs-column-offset(6);
+		.make-xs-column(3);
+	}
 }
-
-.rss > img {
-	width: 20px;
-	height: 20px;
-	vertical-align: top;
-}
-
-aside {
-	.make-sm-column(3);
-	.hidden-xs;
-	padding-right: 40px;
+.post {
+	margin-bottom: 25px;
+	.title {
+		margin-bottom: 0;
+	}
+	.post-body {
+		margin-top: 20px;
+	}
+	.more {
+		margin-top: -10px;
+		font-weight: bold;
+		font-size: 16px;
+		font-variant: small-caps;
+	}
+	a.cta {
+		color: @ctaColor;
+		&:hover, &:active {
+			color: lighten(@ctaColor, 5%);
+			text-decoration: none;
+		}
+	}
 }

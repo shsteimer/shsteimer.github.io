@@ -9,5 +9,5 @@ sudo apt-get -y install nodejs
 
 sudo npm install -g grunt-cli
 cd /vagrant
-npm install --no-bin-link
+sudo npm install --no-bin-link
 grunt

@@ -7,8 +7,11 @@ title: Home
 <h1>Latest Posts</h1>
 {% for post in site.posts %}
 	<article class="post">
-	    <a href="{{ post.url }}" title="{{ post.title }}"><h2>{{ post.title }}</h2></a>
+	    <a class="cta" href="{{ post.url }}" title="{{ post.title }}"><h2 class="title">{{ post.title }}</h2></a>
 	    <span class="post-info text-muted">Posted by {{ post.author }} on {{ post.date | date_to_string }}</span>
-	    <div class="post-body">{{ post.excerpt }}</div>
+	    <div class="post-body">
+	    	{{ post.excerpt }}
+	    	<p class="more"><a class="cta" href="{{ post.url }}" title="{{ post.title }}">Read More...</a></p>
+	    </div>
 	</article>
 {% endfor %}
