@@ -22,7 +22,7 @@ post-date: 2014-01-18 13:00:00
 	      			<ul>
 	        		{% for post in category[1] %} 
 	    				<li><a href="{{ post.url }}"
-              onClick="_gaq.push(['_trackEvent', 'viewpost', 'category: {{ category | first }}', '{{ post.title }}']);">{{ post.title }}</a></li> 
+              onClick="ga('send', 'event', 'viewpost', 'category: {{ category | first }}', '{{ post.title }}');">{{ post.title }}</a></li> 
 	  				{% endfor %}
 	  				</ul>
       			</div>
@@ -46,7 +46,7 @@ post-date: 2014-01-18 13:00:00
        				<ul>
 	        		{% for post in tag[1] %} 
 	    				<li><a href="{{ post.url }}"
-              onClick="_gaq.push(['_trackEvent', 'viewpost', 'tag: {{ tag | first }}', '{{ post.title }}']);">{{ post.title }}</a></li> 
+              onClick="ga('send', 'event', 'viewpost', 'tag: {{ tag | first }}', '{{ post.title }}');">{{ post.title }}</a></li> 
 	  				{% endfor %}
 	  				</ul>
       			</div>
