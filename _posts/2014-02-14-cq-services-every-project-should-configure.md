@@ -13,13 +13,13 @@ One note before I start; This post makes several references to configurations ap
 Logging
 -------
 
-This one is pretty basic.  Scanning the error log that comes out of the box will only get you so far, and you quickly find that custom logging is needed.  I, at a minimum always configure the following.
+This one is pretty basic.  Scanning the error log that comes out of the box will only get you so far, and you quickly find that custom logging is needed.  I, at a minimum, always configure the following.
 
 - &lt;project&gt;-error.log.  This log is set at the top level package for all my project code, ie. com.&lt;projectname&gt;.wcm.  I set this logger at a debug level in local and dev environments, and then at a warn level in QA and error level in production.  This log isn't intended to be very chatty, in fact in prod it should ideally be empty.  But it's also a nice fallback for seeing the full scope of project code in local and dev, and a great way to check for errors in your prod environments.
-- &lt;project&gt;-components.log.  This logs all component java code, as well as jsp's, so your log pacakges should look something like [com.&lt;project&gt;.wcm.components,apps.&lt;projectname&gt;].  I usually set this, as well as the next log, at an info level in production & qa, and a debug level in all lower environments.
+- &lt;project&gt;-components.log.  This logs all component java code, as well as jsp's, so your log packages should look something like [com.&lt;project&gt;.wcm.components,apps.&lt;projectname&gt;].  I usually set this, as well as the next log, at an info level in production & qa, and a debug level in all lower environments.
 - &lt;project&gt;-services.log.  This logs all my custom osgi services code, so it's set at something like com.&lt;projectname&gt;.services.  This gives me a nice way to trace service startup & shutdown, debug issues with service dependency wiring, as well as debug any issues with custom service layer code.
 
-You can obviously add more log files if your project dictates it, but I use this as a minimum starting point.  Also, you may also want to configure log writers for each of your log files, for example to role the logs on a more frequent basis then the default settings.
+You can obviously add more log files if your project dictates it, but I use this as a minimum starting point.  Also, you may also want to configure log writers for each of your log files, for example to roll the logs on a more frequent basis then the default settings.
 
 HTML Library Manager
 --------------------
@@ -51,9 +51,9 @@ This is a service which will have a configuration for each cq environment you ha
 
 Then, at a code level you would use as follows to generate external URLs:
 
-See also the [javadocs for the externalizer service][4].
-
 {% gist 8997451 %}
+
+See also the [javadocs for the externalizer service][4].
 
 Sling Webconsole Security Provider
 --------------------------------
