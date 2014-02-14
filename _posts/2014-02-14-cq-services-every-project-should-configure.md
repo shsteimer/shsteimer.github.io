@@ -58,7 +58,7 @@ See also the [javadocs for the externalizer service][4].
 Sling Webconsole Security Provider
 --------------------------------
 
-This configuration allows you to specify an array of users and groups which can log-in to the felix webconsole.  By default, only the admin user can access this, but for what should be obvious reasons, you don't want to share the admin logic credentials with everyone who needs to get to the felix console.  Instead, simple configure this service to allow a custom group to login, then just add your users who should have access to the console to this group.
+This configuration allows you to specify an array of users and groups which can log-in to the felix webconsole.  By default, only the admin user can access this, but for what should be obvious reasons, you don't want to share the admin login credentials with everyone who needs to get to the felix console.  Instead, simple configure this service to allow a custom group to login, then just add your users who should have access to the console to this group.
 
 Page Statistics Service
 -------------
