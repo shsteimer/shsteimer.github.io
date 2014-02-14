@@ -67,12 +67,12 @@ footer {
 		margin-top: -10px;
 		font-weight: bold;
 		font-size: 16px;
-		font-variant: small-caps;
+		font-family: @headings-font-family
 	}
 	a.cta {
-		color: @ctaColor;
-		&:hover, &:active {
-			color: lighten(@ctaColor, 5%);
+		color: @cta-link-color;
+		&:hover, &:focus {
+			color: @cta-link-hover-color;
 			text-decoration: none;
 		}
 	}
