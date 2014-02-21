@@ -51,7 +51,12 @@ This is a service which will have a configuration for each cq environment you ha
 
 Then, at a code level you would use as follows to generate external URLs:
 
-{% gist 8997451 %}
+{% highlight java linenos %}
+@Reference
+private Externalizer ext; 
+...
+ext.externalLink(resourceResolver, "site1", "/path/to/my/page") + ".html";
+{% endhighlight %}
 
 See also the [javadocs for the externalizer service][4].
 

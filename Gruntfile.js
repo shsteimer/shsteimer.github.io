@@ -6,7 +6,8 @@ module.exports = function(grunt) {
         less: {
             dev: {
                 files: {
-                    'static/css/shsteimer.css': ['_static/less/shsteimer.less']
+                    'static/css/shsteimer.css': ['_static/less/shsteimer.less'],
+                    'static/css/code-highlights.css': ['_static/less/code-highlights.less']
                 }
     	    },
     		dist: {
@@ -14,7 +15,7 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    'static/css/shsteimer.min.css': ['_static/less/shsteimer.less']
+                    'static/css/shsteimer.min.css': ['_static/less/shsteimer.less', '_static/less/code-highlights.less']
                 }
     	    }
         },
