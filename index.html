@@ -9,7 +9,7 @@ title: Home
 	<article class="post">
 	    <a class="cta" href="{{ post.url }}" title="{{ post.title }}"
 	    onClick="ga('send', 'event', 'viewpost', 'title', '{{ post.title }}');"><h2 class="title">{{ post.title }}</h2></a>
-	    <span class="post-info text-muted">Posted by {{ post.author }} on {{ post.date | date_to_string }}</span>
+	    <span class="post-info text-muted">Posted by {{ post.author }} on {{ post.date | date: "%A, %B %-d, %Y" }}</span>
 	    <div class="post-body">
 	    	{{ post.excerpt }}
 	    	<p class="more"><a class="cta" href="{{ post.url }}" title="{{ post.title }}"

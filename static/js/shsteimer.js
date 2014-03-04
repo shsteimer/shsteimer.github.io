@@ -27,6 +27,11 @@ shsteimer = {
 			    var shown = evt.target.id;
 				ga('send', 'event', 'expandarchive', 'tag: ' + shown);
 			});
+
+			$('#date-accordion').on('shown.bs.collapse', function (evt) {
+			    var shown = evt.target.id;
+				ga('send', 'event', 'expandarchive', 'year: ' + shown);
+			});
 		}
 	}
 };
