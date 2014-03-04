@@ -6013,3 +6013,7 @@ footer .copy {
   color: #9b2300;
   text-decoration: none;
 }
+blockquote {
+  margin: 22px 25% 22px 0;
+  background: #fbfbfb;
+}

@@ -14,6 +14,7 @@ Due to the nature of CQs component structure, if you have components that rely o
 
 The final solution is described in detail below.  I would note that there are probably a few ways to accomplish this, but I like this method because it's simple and flexible while still getting the job done, and since we are using client libs, all of the js for a particular component is maintained with that component.
 <!--more-->
+
 OK, let’s start with our CQ page template as there are a few things we need to do here in order to make this work.  First, in the head of your template (head.jsp, assuming you're following the standard model provided by the foundation page template component), add the following JavaScript snippet:
 
 {% highlight html linenos %}

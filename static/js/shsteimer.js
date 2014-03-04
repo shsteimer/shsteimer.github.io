@@ -17,6 +17,16 @@ shsteimer = {
 	    	if(elem && elem.hasClass('panel-collapse')) {
 	    		elem.collapse('show');
 	    	}
+
+	    	$('#cats-accordion').on('shown.bs.collapse', function (evt) {
+				var shown = evt.target.id;
+				ga('send', 'event', 'expandarchive', 'category: ' + shown); 
+			});
+
+			$('#tags-accordion').on('shown.bs.collapse', function (evt) {
+			    var shown = evt.target.id;
+				ga('send', 'event', 'expandarchive', 'tag: ' + shown);
+			});
 		}
 	}
 };

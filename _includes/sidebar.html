@@ -3,7 +3,8 @@
     <section class="well categories">
         <ul>
             {% for category in site.categories %}
-                <li><a href="/archives/#cat-{{ category | first | slugize }}">{{ category | first }} ({{ category | last | size}})</a></li>
+                <li><a href="/archives/#cat-{{ category | first | slugize }}"
+                onClick="ga('send', 'event', 'viewarchives', '{{ category | first }}');">{{ category | first }} ({{ category | last | size}})</a></li>
             {% endfor %}   
         </ul> 
     </section>
@@ -11,7 +12,8 @@
     <section class="well tags">
         <ul>
             {% for tag in site.tags %}
-                <li><a href="/archives/#tag-{{ tag | first | slugize }}">{{ tag | first }} ({{ tag | last | size}})</a></li>
+                <li><a href="/archives/#tag-{{ tag | first | slugize }}"
+                onClick="ga('send', 'event', 'viewarchives', '{{ tag | first }}');">{{ tag | first }} ({{ tag | last | size}})</a></li>
             {% endfor %}   
         </ul>    
     </section>        
