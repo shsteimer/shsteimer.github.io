@@ -4,16 +4,16 @@ shsteimer = {
 
 		!(function($) {
   			$.each(window._q,function(index,f){
-  				f();
+  				f($);
   			});
   		})(shsteimer.$);
 	},
 
 	archives: {
-		init: function() {
+		init: function($) {
 			var href = location.href;
 	    	var split = href.split("#");
-	    	var elem = shsteimer.$('#collapse-' + split[1]);
+	    	var elem = $('#collapse-' + split[1]);
 	    	if(elem && elem.hasClass('panel-collapse')) {
 	    		elem.collapse('show');
 	    	}
