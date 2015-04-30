@@ -13,6 +13,7 @@ However, in the course of doing said code reviews, I've found myself frequently 
 When developing for CQ, there is almost always more than one way to solve a given problem, and often times 3 or 4 ways.  Partly, this is due to the fact that the platform is built on top of a cascading series of frameworks, each with their own API operating at a given level of abstraction.  
 
 Just as a quick example, If I need to maniupulate a page's content I could:
+
  * use the Page Manager to retrieve the Page, then get the content Resource from there
  * use the Sling Resource Resolver, to grab the content Resource I need directly
  * use a JCR Session to retrieve the Node I need to manipulate

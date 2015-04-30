@@ -6,5 +6,5 @@ name: Sean Steimer | shsteimer.com
 excerpt_separator: <!--more-->
 safe: true
 lsi: false
-markdown: redcarpet
 devmode: false
+markdown: kramdown
