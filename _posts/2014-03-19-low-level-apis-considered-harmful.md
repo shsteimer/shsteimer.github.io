@@ -7,7 +7,8 @@ tags: development api code-review jcr sling abstraction
 ---
 For my latest project, we've instituted a process where-by every single commit gets code reviewed by at least one other person, and usually by 2 or more people.  It's a process I really enjoy and think has led to exponential gains in code quality.  At some point I'll probably post more info on the tools we use to facilitate this process and how it works.  It's nothing groundbreaking or revolutionary, but it's interesting nonetheless.  That's a post for another day.  
 
-However, in the course of doing said code reviews, I've found myself frequently commenting on my preference for higher level APIs over their lower level equivelents.  This has drawn some confusion at times, so I thought I would explain that stance, and why I believe it is, in general, the right approach.<!--more-->
+However, in the course of doing said code reviews, I've found myself frequently commenting on my preference for higher level APIs over their lower level equivelents.  This has drawn some confusion at times, so I thought I would explain that stance, and why I believe it is, in general, the right approach.
+<!--more-->
 
 When developing for CQ, there is almost always more than one way to solve a given problem, and often times 3 or 4 ways.  Partly, this is due to the fact that the platform is built on top of a cascading series of frameworks, each with their own API operating at a given level of abstraction.  
 
