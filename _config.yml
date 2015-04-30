@@ -4,4 +4,7 @@ exclude: ['package.json', 'Gruntfile.js', 'node_modules', 'CNAME', 'LICENSE', 'R
 description: a Weblog about stuff.
 name: Sean Steimer | shsteimer.com
 excerpt_separator: <!--more-->
+safe: true
+lsi: false
+markdown: redcarpet
 devmode: false
