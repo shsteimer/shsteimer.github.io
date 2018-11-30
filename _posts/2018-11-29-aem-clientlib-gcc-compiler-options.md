@@ -22,7 +22,7 @@ This got me low enough level info on what errors were acutally occuring during c
 30.11.2018 20:17:33.712 *ERROR* [10.0.2.2 [1543609053532] GET /etc.clientlibs/my-app/clientlibs/clientlib-mylib.min.js HTTP/1.1] com.google.javascript.jscomp /apps/wcax-app/clientlibs/clientlib-mylib.js:5568: ERROR - this language feature is only supported for ECMASCRIPT6 mode or better: let declaration. Use --language_in=ECMASCRIPT6 or ECMASCRIPT6_STRICT or higher to enable ES6 features.
         let somVar = undefined;
         ^
-        ```
+```
 
 Once I knew that, the next step was figuring out how to fix it.
 
