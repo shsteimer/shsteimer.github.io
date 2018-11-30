@@ -5,16 +5,16 @@ author: Sean
 categories: AEM
 tags:  aem clientlibs
 ---
-While debugging why our AEM javascript client libarires weren't properly minifying on my current project, I learned a few new tricks.  Most of this is documented [here][1] but it was new to me, at least.
+While debugging why our AEM javascript client libraries weren't properly minifying on my current project, I learned a few new tricks.  Most of this is documented [here][1] but it was new to me, at least.
 
 ## Debugging GCC Client Library Minification
 
-Our js client libraries were mysteriously not actually outputing as minified, instead just coming back as the full source versions.  This didn't cause any functional issues, but was an annoyance for a long time.  It was also hard to find the problem because the default error log doesn't actually print why the js failed to minify, just a generic statement about the number of errors.  The key to this was adding a logger on the google javascript compiler classes.  I ended up creating a custom logger configuration for 2 packages at the debug level: 
+Our js client libraries were mysteriously not actually outputing as minified, instead just coming back as the full source versions.  This didn't cause any functional issues, but was an annoyance for a long time.  It was also hard to find the problem because the default error log doesn't actually print why the js failed to minify, just a generic statement about the number of errors.  The key to this was adding a logger on the google javascript compiler classes.  I ended up creating a custom logger configuration for 2 packages at the debug level to get all of the info I needed: 
 
 - com.adobe.granite.ui.clientlibs
 - com.google.javascript.jscomp
 
-This got me low enough level info on what errors were acutally occuring during compilation, so I knew what the problem was.  As it turns out, some our developers had been using the ES6 `let` keyword to declare variables, and the compiler was choking on this because the source mode defaults to ES5.
+This got me to a low enough level of info on what errors were acutally occuring during compilation, so I that I knew what the problem was.  As it turns out, some our developers had been using the ES6 `let` keyword to declare variables, and the compiler was choking on this because the source mode defaults to ES5.
 
 <!--more-->
 
