@@ -16,6 +16,8 @@ Our js client libraries were mysteriously not actually outputing as minified, in
 
 This got me low enough level info on what errors were acutally occuring during compilation, so I knew what the problem was.  As it turns out, some our developers had been using the ES6 `let` keyword to declare variables, and the compiler was choking on this because the source mode defaults to ES5.
 
+<!--more-->
+
 TODO: insert log statement showing this.
 
 Once I knew that, the next step was figuring out how to fix it.

@@ -3,7 +3,7 @@ layout: post
 title: Avoid Paying the JQuery Tax in Adobe CQ
 author: Sean
 categories: AEM
-tags: cq jquery javascript http best-practices
+tags: jquery javascript
 ---
 
 <p class="text-muted"><strong>Note: I had originally written this post sometime last year on my old blog (at this same domain).  I'm restoring it here, because I think it contains some useful information.  The exact same content can aso be found on the <a href="http://www.crownpartners.com/blog/avoid-paying-jquery-tax-adobe-cq">Crown Blog</a>.</strong></p>

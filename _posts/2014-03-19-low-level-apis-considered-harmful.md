@@ -3,7 +3,7 @@ layout: post
 title: Low Level APIs Considered Harmful
 author: Sean
 categories: AEM
-tags: development api code-review jcr sling abstraction
+tags: development code-review abstractions
 ---
 For my latest project, we've instituted a process where-by every single commit gets code reviewed by at least one other person, and usually by 2 or more people.  It's a process I really enjoy and think has led to exponential gains in code quality.  At some point I'll probably post more info on the tools we use to facilitate this process and how it works.  It's nothing groundbreaking or revolutionary, but it's interesting nonetheless.  That's a post for another day.  
 

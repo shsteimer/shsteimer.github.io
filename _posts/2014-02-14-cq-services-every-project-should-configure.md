@@ -3,7 +3,7 @@ layout: post
 title: CQ Services Every Project Should Configure
 author: Sean
 categories: AEM
-tags: osgi cq aem services runmodes configuration
+tags: osgi runmodes configuration
 ---
 If you've spent any serious amount of time as a cq developer or administractor, you are probably aware of the ability to configure OSGI services both via the webconsole or via runmode scoped configuration folders in the crx repository.  This post is an attempt to document (perhaps for myself more than for anyone else) the services that I configure for every single CQ project, and that I think every CQ project should configure to fit their needs.
 <!--more-->

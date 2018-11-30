@@ -3,7 +3,7 @@ layout: post
 title: "Book Review: The Non-Designer's Design Book"
 author: Sean
 categories: books
-tags: book-review design kindle typography color
+tags: book-review design
 ---
 I recently finished reading [The Non-Designer's Design Book][1] on my kindle, a book that has been on my reading list for a while, but that I just got around to purchasing and reading about 3 weeks ago.  The title couldn't be more accurate, as the book describes in laymens terms the bare minimum you need to know to recognize and apply good design.
 <!--more-->
