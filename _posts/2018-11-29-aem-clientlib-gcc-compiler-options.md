@@ -32,27 +32,27 @@ By setting the `cssProcessor` and `jsProcessor` properties on the `cq:ClientLibr
 
 In addition to changing the processor from yui to gcc though, you can also pass additional options to GCC to tune the compilation process.  For example, if your js source uses ES6/ES2015 syntax, as ours was, you can pass the `languageIn` option to have it transpile your ES6 code to ES5.
 
-```
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:ClientLibraryFolder"
     allowProxy="{Boolean}true"
     jsProcessor="[default:none,min:gcc;languageIn=ECMASCRIPT_2015]"
     categories="[my.client.lib.name]"/>
-```
+{% endhighlight %}
 
 In addition to `languageIn`, you can also pass `compilationLevel`, `languageOut`, or `failOnWarning`.
 
 To combine multiple options, you simply separate each one with a semi-colon as follows.
 
-```
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:ClientLibraryFolder"
     allowProxy="{Boolean}true"
     jsProcessor="[default:none,min:gcc;languageIn=ECMASCRIPT_2015;compilationLevel=whitespace]"
     categories="[my.client.lib.name]"/>
-```
+{% endhighlight %}
 
 
 Note that all of these options can also be set globally on the `jsProcessor` property of the `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl` service configuration.
