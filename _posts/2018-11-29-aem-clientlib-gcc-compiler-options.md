@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Google Closure Compiler (GCC) Options with AEM Client Librariries
+title: Using Google Closure Compiler (GCC) Options with AEM Client Libraries
 author: Sean
 categories: AEM
 tags:  aem clientlibs
