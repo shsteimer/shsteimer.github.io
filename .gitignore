@@ -1,5 +1,6 @@
 .vagrant/
 _site/
+_drafts/
 node_modules/
 *.sublime-project
 *.sublime-workspace
