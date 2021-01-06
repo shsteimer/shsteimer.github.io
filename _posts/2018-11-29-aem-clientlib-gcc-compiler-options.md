@@ -3,7 +3,7 @@ layout: post
 title: Using Google Closure Compiler (GCC) Options with AEM Client Libraries
 author: Sean
 categories: AEM
-tags:  aem clientlibs
+tags:  clientlibs
 ---
 While debugging why our AEM javascript client libraries weren't properly minifying on my current project, I learned a few new tricks.  Most of this is documented [here][1] but it was new to me, at least.
 
