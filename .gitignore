@@ -2,6 +2,7 @@
 _site/
 _drafts/
 node_modules/
+www/
 *.sublime-project
 *.sublime-workspace
 .DS_STORE
