@@ -9,6 +9,16 @@ shsteimer = {
   		})(shsteimer.$);
 	},
 
+	footnotes: {
+		init: function($) {
+			$('a#footnote').on('click', function(evt){
+				var noteRef = $(this).attr('href');
+				//evt.preventDefault()
+				console.log('footnote clicked: ' + noteRef);
+			});
+		}
+	},
+
 	archives: {
 		init: function($) {
 			var href = location.href;
