@@ -13,8 +13,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Throw in our provisioning script
-  config.vm.provision "shell", path: "./bootstrap.sh", privileged: false, args: ENV['GHP_REPO']
-  config.vm.provision "shell", path: "./run_jekyll.sh", privileged: false, args: ENV['GHP_REPO'], run: 'always'
+  config.vm.provision "shell", path: "./scripts/bootstrap.sh", privileged: false, args: ENV['GHP_REPO']
+  config.vm.provision "shell", path: "./scripts/run_jekyll.sh", privileged: false, args: ENV['GHP_REPO'], run: 'always'
 
   # Map localhost:4000 to port 4000 inside the VM
   config.vm.network "forwarded_port", guest: 4000, host: 4000
