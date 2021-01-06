@@ -60,7 +60,7 @@ Title would end up storing either the page's title, or null, but this code can n
 
 ## Adding Kotlin Support to AEM
 
-Because Kotlin compiles to standard JVM bytecode, adding Kotlin support to your AEM project is trivially easy. [This post][5] from a few years ago lays out the basic steps[^n1], but it effectively boils down to adding the kotlin-maven-plugin to your builds and then embedding the kotlin osgi library within your application package. There is one additional step, which is to add your kotlin source and test directories via the build helper plugin to your root pom. This ensures those sources are not only recognized by the kotlin plugin, but alos by other plugins such as jacoco, which is important so that when your build is executed by Cloud Manager, kotlin tests are included in cioverage metrics.
+Because Kotlin compiles to standard JVM bytecode, adding Kotlin support to your AEM project is trivially easy. [This post][5] from a few years ago lays out the basic steps[^n1], but it effectively boils down to adding the kotlin-maven-plugin to your builds and then embedding the kotlin osgi library within your application package. There is one additional step, which is to add your kotlin source and test directories via the build helper plugin to your root pom. This ensures those sources are not only recognized by the kotlin plugin, but also by other plugins such as jacoco, which is important so that when your build is executed by Cloud Manager, kotlin tests are included in coverage metrics.
 
 Overall, you'll end up with something like this in your root pom
 
